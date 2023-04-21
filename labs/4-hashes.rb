@@ -2,7 +2,7 @@
 # ----------------------
 require "net/http"
 require "json"
-url = "x"
+url = "https://api.coindesk.com/v1/bpi/currentprice.json"
 uri = URI(url)
 response = Net::HTTP.get(uri)
 bitcoin_data = JSON.parse(response)
