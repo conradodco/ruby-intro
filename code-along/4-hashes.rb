@@ -4,6 +4,15 @@
 
 # Hashes are lists of *key-value pairs*
 
+me = {
+    "name" => "Conrado",
+    "location" => { "city" => "Chicago", "state" => "Illinois"}
+}
+
+#puts me
+
 # Accessing data from the hash
+
+puts me["name"]
 
 # More Complex Hashes

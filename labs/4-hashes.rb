@@ -2,7 +2,7 @@
 # ----------------------
 require "net/http"
 require "json"
-url = "https://api.coindesk.com/v1/bpi/currentprice.json"
+url = "x"
 uri = URI(url)
 response = Net::HTTP.get(uri)
 bitcoin_data = JSON.parse(response)
@@ -29,4 +29,7 @@ bitcoin = gets.chomp
 bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
-# puts bitcoin_data
+
+#puts bitcoin_data
+
+puts "Your Bitcoin is worth " + (bitcoin_data["bpi"]["USD"]["rate_float"].to_f * bitcoin ).to_s
